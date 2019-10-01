@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script>
+<script>
+	$(document).ready(function() {
+		var cont = [
+			{name : 'tom', region : '서울시 강서구'},
+			{name : 'eddy', region : '서울시 강남구'},
+			{name : 'rupy', region : '서울시 양천구'},
+		];
+		$('div').append(function (index) {
+			var a = cont[index];
+			var out = '';
+			
+			out += '<h1>' + a.name + '</h1>';
+			out += '<h3>' + a.region + '</h3>';
+		
+			return out;
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

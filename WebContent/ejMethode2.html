@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div {
+		color:red;
+		text-align:center;
+		cursor:pointer;
+		font-weight:bolder;
+		width:300px;
+	}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script>
+
+	$(document).ready(function(){
+		
+	    $(document.body).click(function(){	//$("div").click(function(){ 도 가능
+	    	 
+	    	$("div").each(function(i) {
+	    		
+	    		if(this.style.color!="blue") {
+	    			this.style.color = "blue";
+	    		} else {
+	    			this.style.color="";
+	    		}
+	    		
+	    	});
+	      
+	    });
+	});
+	
+</script>
+</head>
+<body>
+	<div>Click here</div>
+	<div>to iterate through</div>
+	<div>these divs</div>
+</body>
+</html>

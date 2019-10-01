@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+      $(document).ready(function () {
+        $('button').click(function () {
+          
+          $('#id1').attr({
+            'title' : 'daum',
+            'href' : 'https://www.daum.net'
+          });
+
+          $('#id1').text('Daum');
+
+          
+          $('#w3s').attr('href', function (i, originValue) {
+            return originValue+'/jsp';
+          });
+          
+          //$('#id2').attr({
+          //    'title' : 'google',
+          //    'href' : 'https://www.kbstar.com'
+          //});
+          
+          //$('#id2').text('국민은행');
+          
+          $("#id2").attr("title", "kbstar");
+          $("#id2").attr("href", "https://www.kbstar.com");
+          $('#id2').text('국민은행');
+        });
+      });
+      
+      //+attr과 prop의 차이점 시험에서 다룰 것임
+</script>
+</head>
+<body>
+    <p>
+      <a href="https://www.naver.com" title="naver" id="id1">naver.com</a>
+    </p>
+
+    <p>
+      <a href="https://www.tutorialspoint.com" title="w3s" id="w3s">tutorialspoint.com</a>
+    </p>
+
+	<p>
+      <a href="https://www.google.com" title="google" id="id2">google.com</a>
+    </p>
+    <button type="button" name="button">href와 title변경</button>
+</body>
+</html>

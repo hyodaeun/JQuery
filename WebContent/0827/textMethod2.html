@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function() {
+		$('h2').text("<img src='r1.png'>");
+		var a = $('h2').text();
+		alert(a);
+		//text와 html메소드의 차이점을 알아야 함
+		//1. text는 단순 텍스트 요소만 리턴, html은 텍스트를 포함한 태그까지 리턴
+		//2. text는 요소의 개수만큼 리턴(alert창), html은 한 번만 리턴 
+		
+	});
+</script>
+</head>
+<body>
+<h2></h2>
+<h2></h2>
+</body>
+</html>

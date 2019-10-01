@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() { /*$(function(){ 실행문; }); 도 됨 */
+        console.log($('#m1>div').text()); /*변경전 text 내용*/
+        $('#m1>div').text("responsive web");
+        $('#m2>div').text(function(index, text){
+            return "div 요소의 텍스트는 " +  text + ", index는 " + index;
+        });
+    });
+</script>
+
+</head>
+<body>
+    <div id="m1">
+        <div>jQuery</div>
+    </div>
+    <div id="m2">
+        <div>html</div>
+        <div>css</div>
+        <div>javascript</div>
+    </div>
+</body>
+</html>

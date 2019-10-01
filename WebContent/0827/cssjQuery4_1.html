@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//1. 문자열 방식
+		$("#m1").css("color","white");
+		$("#m1").css("background-color","black");
+		$("#m1").css("font-style","italic");
+		$("#m1").css("font-size","20px");
+		$("#m1").css("text-align","left");
+		
+		//2. 객체 방식
+		$("#m2").css({"color":"purple","background-color":"gray"});
+		
+		//3. 함수 방식
+		$("p").css("color", function(){
+			return "green";
+		});
+		$("p").css("border", function(){
+			return "2px solid blue";
+		});
+		$("p").css("text-align", function(){
+			return "center";
+		});
+		
+		$("#m3").css({
+			"color": function(){
+				return "red";
+			},
+			"background-color" : function(){
+				return "black";
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<div id="m1">jQuery</div>
+<div id="m2">javascript</div>
+<p>jQuery mobile</p>
+<div id="m3">responsive Web</div>
+</body>
+</html>

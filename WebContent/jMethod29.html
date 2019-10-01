@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script>
+<script>
+	$(document).ready(function() {
+		$('img').css('width', 100).css('height', 100);
+		setInterval(function() {
+			$('img').first().appendTo('body');
+		}, 2000);
+		
+	});
+</script>
+</head>
+<body>
+	<img src = 'r1.png'/>
+	<img src = 'r2.png'/>
+	<img src = 'r3.jpg'/>
+	<img src = 'r4.png'/>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function() {
+		//$('#m2 > div').removeClass('bg');
+		$('#m2 > div').removeClass(function(index) {
+			return 'c'+(index+1);
+		});
+	});
+</script>
+</head>
+<body>
+	<div id='m1'>
+		<div class='con'>콘텐츠</div>
+	</div>
+	<div id='m2'>
+		<div class='c1 bg'>내용1</div>
+		<div class='c2 bg'>내용2</div>
+		<div class='c3 bg'>내용3</div>
+	</div>
+</body>
+</html>

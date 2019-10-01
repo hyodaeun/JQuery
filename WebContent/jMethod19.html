@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script>
+<script>
+	$(document).ready(function() {
+		$('h1').css('color', 'red');
+		$('h1').css('font-size', '10px');
+		$('h2').css('color', function(index) {
+			return 'yellow';
+		});
+		$('h2').css('font-size', function(index) {
+			return '20px';
+		});
+		$('h3').css({
+			'color':'blue',
+			'background':'white'
+		});
+		//3번째꺼 따옴표안감싸도 된다??
+	});
+</script>
+</head>
+<body>
+	<h1>h1</h1>
+	<h1>h1</h1>
+	<h2>h2</h2>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	<h3>h3</h3>
+	
+</body>
+</html>

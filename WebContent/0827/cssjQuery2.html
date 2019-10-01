@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+
+	$(document).ready(function() {
+		//style말고 이렇게 줄 수도 있음
+		$("div").css("margin", "20px");
+		$("div").css("padding", "20px");
+		
+		$("img").css("width", "100px");
+		$("img").css("height", "100px");
+		
+		
+		//스페이스를 사용하여 접근 가능
+		var w;
+		var h;
+		
+		$(".m1 img").click(function() {
+			w = $('.m1 img').width();
+			h = $('.m1 img').height();
+			
+			$('.m1 img').width(w+100);
+			$('.m1 img').height(h+100);
+		});
+		
+		$(".btn_2").click(function() {
+			w = $('.m2 img').width();
+			h = $('.m2 img').height();
+			$('.m2 img').width(w+100);
+			$('.m2 img').height(h+100);
+		});
+		
+	});
+	
+	
+</script>
+</head>
+<body>
+<div class="m1"><img alt="r1" src="r1.png">
+<button class="btn_1">클릭</button></div>
+<div class="m2"><img alt="r2" src="r2.png">
+<button class="btn_2">클릭</button></div>
+</body>
+</html>

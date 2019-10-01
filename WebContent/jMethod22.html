@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script>
+<script>
+	$(document).ready(function() {
+		
+		//$('h1').first().remove();
+		$('h2').empty();//자신만 지움
+		//$('div').empty();//div 자신은 지워지지 않고 그 하위 태그만 삭제
+	});
+</script>
+</head>
+<body>
+	<div>
+		<h1>Header-1</h1>
+		<h1>Header-2</h1>
+		<h2>Header-3</h2>
+		<h2>Header-4</h2>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script>
+<script>
+	$(docuement).ready(function() {
+		$('h1').removeAttr('data-index');
+	});
+</script>
+</head>
+<body>
+<!-- DOM : 넓은 의미로는 웹브라우저가 HTML 페이지를 인식하는 방식을 의미
+		     조금 좁은 의미로는 document 객체와 관련된 객체의 집합을 의미 -->
+	<h1 data-index="0">Header-0</h1>
+	<h1 data-index="1">Header-1</h1>
+	<h1 data-index="2">Header-2</h1>
+</body>
+</html>

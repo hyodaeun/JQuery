@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	p {
+		margin:8px;
+		font-size:16px;
+	}
+	.selected {
+		color:red;
+		font-weight:bold;
+	}
+	.highlight {
+		background:yellow;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function() {
+		
+		$('#btn').click(function() {
+			$('p').toggleClass('selected');
+			$('p').toggleClass('highlight');
+			//이것도 가능
+			//$('p').toggleClass('selected').toggleClass('highlight');
+		});
+	});
+</script>
+</head>
+<body>
+	<p>안녕하세요</p>
+	<p class="highlight">반갑습니다.</p>
+	<p class="highlight">안녕히계세요</p>
+	<input type="button" id="btn" value="클래스 삭제">
+</body>
+</html>

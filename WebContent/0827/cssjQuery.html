@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+
+	$(document).ready(function() {
+		$("li").css("margin", "5px");
+	
+		//class명으로 접근 가능
+		$(".list_1").css("border", "2px solid red");
+		$(".list_2").css("border", "1px solid orange");
+		$(".list_3").css("border", "1px solid orange");
+		$(".list_bg1").css("background", "yellow");
+		$(".list_4").css("border", "2px solid purple");
+		$(".list_bg2").css("background", "purple");
+		
+		$("button").click(function() {
+			$(".list_bg2").css("background", "gray");
+		});
+	});
+	
+	
+</script>
+</head>
+<body>
+	<ul>
+		<li class="list_1">내용_1</li>
+		<li class="list_2">내용_2</li>
+		<li class="list_3">내용_3</li>
+		<li class="list_bg1">내용_1</li>
+		<li class="list_4">내용_2</li>
+		<li class="list_bg2">내용_3</li>
+	</ul>
+	<button class="b1">클릭</button>
+</body>
+</html>
